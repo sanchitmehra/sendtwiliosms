@@ -12,22 +12,44 @@ if($_REQUEST['Body']=='Start'||$_REQUEST['Body']=='start'||$_REQUEST['Body']=='R
          $message="$message1$message2$message3$message4$message5";	
 	}
 
-if ($_REQUEST['Body'] == '1' || $_REQUEST['Body'] == 'maths')
+
+if ($_REQUEST['Body'] == '1' || $_REQUEST['Body'] == 'Maths'|| $_REQUEST['Body'] == 'maths')
 {
-	$message1= "1. 6th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n\n";
 	
-	$message2="2. 7th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf --for 7th grade\n";
-	
-	$message3="Send science to receive science notes, history to receive history notes, english to receive english notes";
-	$message= $message1.$message2.$message3;
+$message1="Send '1.a' for 6th grade\n";	
+	$message2= "Send 2.a' for 7th grade\n";
+	$message3="Send '3.a' for 8th grade\n";
+	$message4="Send '4.a' for 9th grade\n";
+	$message= $message1$message2$message3$message4;
 }
 
-	else if($_REQUEST['Body'] == 'Science' || $_REQUEST['Body'] == 'science')
+if ($_REQUEST['Body'] == '1.a' || $_REQUEST['Body'] == 'Maths'|| $_REQUEST['Body'] == 'maths')
+{
+$message1="1. 6th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf\n";	
+	//$message2= "2. 7th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n";
+	//$message3="3. 8th grade--- http://www.glencoe.com/sites/common_assets/workbooks/math/pdf_workbook/m3ps.pdf";
+	
+	$message= $message1;
+}
+
+if ($_REQUEST['Body'] == '2.a' || $_REQUEST['Body'] == 'Maths'|| $_REQUEST['Body'] == 'maths')
+{
+//$message1="1. 6th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf\n";	
+	$message2= "2. 7th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n";
+	//$message3="3. 8th grade--- http://www.glencoe.com/sites/common_assets/workbooks/math/pdf_workbook/m3ps.pdf";
+	
+	$message= $message2;
+}
+
+
+
+	if($_REQUEST['Body'] == 'Science' || $_REQUEST['Body'] == 'science' || $_REQUEST['Body'] == '2')
 	{
 		$message="science.pdf";
 		
 	}
-	else if($_REQUEST['Body'] == 'History' || $_REQUEST['Body'] == 'history')
+
+	 if($_REQUEST['Body'] == 'History' || $_REQUEST['Body'] == 'history')
 	{
 		$message="History.pdf";
 	}
