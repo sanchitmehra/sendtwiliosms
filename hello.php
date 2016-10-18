@@ -17,7 +17,7 @@ if ($_REQUEST['Body'] == '1' || $_REQUEST['Body'] == 'Maths'|| $_REQUEST['Body']
 {
 	
 $message1="Send '1.a' for 6th grade\n";	
-	$message2= "Send 2.a' for 7th grade\n";
+	$message2= "Send '2.a' for 7th grade\n";
 	$message3="Send '3.a' for 8th grade\n";
 	$message4="Send '4.a' for 9th grade\n";
 	$message= $message1$message2$message3$message4;
