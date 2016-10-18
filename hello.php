@@ -13,6 +13,29 @@ if($_REQUEST['Body']=='Start'||$_REQUEST['Body']=='start'||$_REQUEST['Body']=='R
          $message="$message1$message2$message3$message4$message5";	
 	}
 
+if($_REQUEST['Body']=='1'||$_REQUEST['Body']=='Maths'||$_REQUEST['Body']=='maths')
+{
+	{
+        $message1="1. 6th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf\n";	
+	$message2="2. 7th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n";
+	$message3="3. 8th grade--- http://www.glencoe.com/sites/common_assets/workbooks/math/pdf_workbook/m3ps.pdf";
+	
+	$message= $message1$message2$message3;
+}
+
+
+
+	if($_REQUEST['Body'] == 'Science' || $_REQUEST['Body'] == 'science' || $_REQUEST['Body'] == '2')
+	{
+		$message="science.pdf";
+		
+	}
+
+	 if($_REQUEST['Body'] == 'History' || $_REQUEST['Body'] == 'history'|| $_REQUEST['Body'] == '3')
+	{
+		$message="History.pdf";
+	}
+
 
 
 ?>
