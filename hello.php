@@ -19,7 +19,7 @@ if($_REQUEST['Body']=='Start'||$_REQUEST['Body']=='start'||$_REQUEST['Body']=='R
 <Response>
     <Message>
 Hello  <?php echo $number?>
-<?php echo $body?> 
+<?php echo $message?> 
 
 
 </Message>
