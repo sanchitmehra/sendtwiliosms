@@ -40,7 +40,7 @@ $message1="1. 6th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/
 ?>
 <Response>
     <Message>
-Hello  <?php echo $number."\n"?>
+Hello  <?php echo $number?>
 <?php echo $message?> 
 
 
