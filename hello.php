@@ -5,11 +5,12 @@ $Body=$_POST['Body'];
     header("content-type: text/xml");
 if ($_REQUEST['Body'] == 'Maths' || $_REQUEST['Body'] == 'maths')
 {
-	$message1= "https://www.math.ksu.edu/~dbski/writings/further.pdf --for 6th grade";
+	$message1= "1. 6th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n\n";
 	
-	$message2="  http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf --for 7th grade";
+	$message2="2. 7th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf --for 7th grade\n";
 	
-	$message= $message1.$message2;
+	$message3="Send science to receive science notes, history to receive history notes, english to receive english notes";
+	$message= $message1.$message2.$message3;
 }
 
 	else if($_REQUEST['Body'] == 'Science' || $_REQUEST['Body'] == 'science')
@@ -32,3 +33,8 @@ Hello  <?php echo $number."\n"?>
 
 </Message>
 </Response>
+
+<Response>
+	
+<?php echo $number."\n"?>
+<?php echo $message?> 
