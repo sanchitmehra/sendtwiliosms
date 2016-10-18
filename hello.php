@@ -9,7 +9,7 @@ if($_REQUEST['Body']=='Start'||$_REQUEST['Body']=='start'||$_REQUEST['Body']=='R
 		$message3="2. Science\n";
 		$message4="3. History\n";
 	    $message5="4. English\n";	
-         $message="$message1.$message2.$message3.$message4.$message5";	
+         $message="$message1$message2$message3$message4$message5";	
 	}
 
 if ($_REQUEST['Body'] == '1' || $_REQUEST['Body'] == 'maths')
