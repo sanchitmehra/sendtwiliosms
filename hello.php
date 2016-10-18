@@ -3,7 +3,16 @@ $number=$_POST['9293298005'];
 $Body=$_POST['Body'];
 
     header("content-type: text/xml");
-if ($_REQUEST['Body'] == 'Maths' || $_REQUEST['Body'] == 'maths')
+if($_REQUEST['Body']=='Start'||$_REQUEST['Body']=='start'||$_REQUEST['Body']=='Restart'||$_REQUEST['Body']=='restart')
+	{       $message1="Please select one of the following options using a number or the subject name\n"; 
+		$mesaage2="1. Maths\n";
+		$message3="2. Sceince\n";
+		$message4="3. History\n";
+	    $message5="4. English\n";	
+         $message="$mesaage1.$message2.$message3.$message4.$message5";	
+	}
+
+if ($_REQUEST['Body'] == '1' || $_REQUEST['Body'] == 'maths')
 {
 	$message1= "1. 6th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n\n";
 	
