@@ -1,5 +1,5 @@
 <?php
-$number=$_POST['From'];
+$number=$_POST['9177465090'];
 $body=$_POST['Body'];
 
     header("content-type: text/xml");
