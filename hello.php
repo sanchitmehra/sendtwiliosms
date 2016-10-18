@@ -5,7 +5,11 @@ $Body=$_POST['Body'];
     header("content-type: text/xml");
 if ($_REQUEST['Body'] == 'Maths' || $_REQUEST['Body'] == 'maths')
 {
-	$message= "https://www.math.ksu.edu/~dbski/writings/further.pdf";
+	$message1= "https://www.math.ksu.edu/~dbski/writings/further.pdf --for 6th grade";
+	
+	$message2="  http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf --for 7th grade";
+	
+	$message= $message1.$message2;
 }
 
 	else if($_REQUEST['Body'] == 'Science' || $_REQUEST['Body'] == 'science')
@@ -22,8 +26,9 @@ if ($_REQUEST['Body'] == 'Maths' || $_REQUEST['Body'] == 'maths')
 ?>
 <Response>
     <Message>
-Hello<?php echo $number?>
-<?php echo $message?>
+Hello  <?php echo $number."\n"?>
+<?php echo $message?> 
+
 
 </Message>
 </Response>
