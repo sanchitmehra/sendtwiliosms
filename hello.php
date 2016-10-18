@@ -1,6 +1,6 @@
 <?php
 $number=$_POST['9293298005'];
-$Body=$_POST['Body'];
+$body=$_POST['Body'];
 
     header("content-type: text/xml");
 
@@ -8,7 +8,7 @@ $Body=$_POST['Body'];
 <Response>
     <Message>
 Hello  <?php echo $number?>.
-<?php echo $message?> 
+<?php echo $body?> 
 
 
 </Message>
