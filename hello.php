@@ -23,7 +23,7 @@ $message1="Send 1.a for 6th grade\n";
 	$message= $message1$message2$message3$message4;
 }
 
-if ($_REQUEST['Body'] == 1.a || $_REQUEST['Body'] == 'Maths'|| $_REQUEST['Body'] == 'maths')
+if ($_REQUEST['Body'] == '1.a' || $_REQUEST['Body'] == 'Maths'|| $_REQUEST['Body'] == 'maths')
 {
 $message1="1. 6th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf\n";	
 	//$message2= "2. 7th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n";
@@ -32,7 +32,7 @@ $message1="1. 6th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/
 	$message= $message1;
 }
 
-if ($_REQUEST['Body'] == 2.a || $_REQUEST['Body'] == 'Maths'|| $_REQUEST['Body'] == 'maths')
+if ($_REQUEST['Body'] == '2.a' || $_REQUEST['Body'] == 'Maths'|| $_REQUEST['Body'] == 'maths')
 {
 //$message1="1. 6th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf\n";	
 	$message2= "2. 7th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n";
