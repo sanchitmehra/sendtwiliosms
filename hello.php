@@ -15,12 +15,12 @@ if($_REQUEST['Body']=='Start'||$_REQUEST['Body']=='start'||$_REQUEST['Body']=='R
 
 
 if($_REQUEST['Body']=='1'||$_REQUEST['Body']=='Maths'||$_REQUEST['Body']=='maths')
-	{       //$message1="Please select one of the following options using a number or the subject name\n"; 
-		$message2=" Maths.pdf\n";
-		$message3="maths2.pdf\n";
-		$message4="maths3.pdf\n";
-	    $message5="maths4.pdf";	
-         $message="$message1$message2$message3$message4$message5";	
+	{        
+		$message1=" 1. 6th grade--- http://mrsmmartinsclassroom.weebly.com/uploads/1/8/5/7/18571084/6th_grade_workbook.pdf\n\n";
+		$message2="2. 7th grade--- https://www.math.ksu.edu/~dbski/writings/further.pdf\n\n";
+		$message3=" 8th grade--- http://www.glencoe.com/sites/common_assets/workbooks/math/pdf_workbook/m3ps.pdf\n";
+	    
+         $message="$message1$message2$message3";	
 	}
 
 
