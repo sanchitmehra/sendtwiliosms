@@ -34,7 +34,4 @@ Hello  <?php echo $number."\n"?>
 </Message>
 </Response>
 
-<Response>
-	
-<?php echo $number."\n"?>
-<?php echo $message?> 
+
